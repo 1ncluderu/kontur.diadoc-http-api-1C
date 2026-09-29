@@ -31,4 +31,12 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <templates uuid="598d72b2-ecc0-4990-a66c-449db96336c6">
+    <name>КоннекторHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коннектор HTTP</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
 </mdclass:ExternalDataProcessor>
