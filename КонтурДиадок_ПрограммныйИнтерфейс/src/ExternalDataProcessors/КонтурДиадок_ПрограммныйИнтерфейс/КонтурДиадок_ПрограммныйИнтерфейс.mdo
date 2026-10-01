@@ -9,6 +9,7 @@
     <value>Программный интерфейс (контур.диадок)</value>
   </synonym>
   <containedObjects classId="c3831ec8-d8d5-4f93-8a22-f9bfae07327f" objectId="ffcef228-1ad1-4524-8d94-2581841a8f90"/>
+  <defaultForm>ExternalDataProcessor.КонтурДиадок_ПрограммныйИнтерфейс.Form.Форма</defaultForm>
   <attributes uuid="0cee2146-250c-4ad5-af45-9f81438c2626">
     <name>Организация</name>
     <synonym>
@@ -31,6 +32,15 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <forms uuid="85f6e978-7bff-455a-86dd-5b3838f35c67">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="598d72b2-ecc0-4990-a66c-449db96336c6">
     <name>КоннекторHTTP</name>
     <synonym>
