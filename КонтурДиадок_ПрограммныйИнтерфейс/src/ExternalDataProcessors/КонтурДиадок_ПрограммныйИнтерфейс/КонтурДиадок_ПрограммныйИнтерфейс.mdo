@@ -41,6 +41,24 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="12e37582-43c5-4263-9a1a-58fa55fab1d4">
+    <name>ПоискЯщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск ящика</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c048f60c-28fa-4953-894c-10d24b72a490">
+    <name>ПоискСертификата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск сертификата</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <templates uuid="598d72b2-ecc0-4990-a66c-449db96336c6">
     <name>КоннекторHTTP</name>
     <synonym>
