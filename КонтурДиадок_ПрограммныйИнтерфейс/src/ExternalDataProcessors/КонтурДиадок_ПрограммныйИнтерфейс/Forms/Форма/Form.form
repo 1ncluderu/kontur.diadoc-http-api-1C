@@ -683,17 +683,81 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаСтраницаСписокКонтрагентов</name>
       <id>55</id>
-      <items xsi:type="form:Button">
-        <name>СписокКонтрагентов</name>
-        <id>57</id>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаКнопкиСписокКонтрагентов</name>
+        <id>83</id>
+        <items xsi:type="form:Button">
+          <name>СписокКонтрагентов</name>
+          <id>57</id>
+          <title>
+            <key>ru</key>
+            <value>Первые 100</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокКонтрагентовРасширеннаяПодсказка</name>
+            <id>58</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.СписокКонтрагентов</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
+        <items xsi:type="form:Button">
+          <name>СписокКонтрагентовПолныйСписок</name>
+          <id>81</id>
+          <title>
+            <key>ru</key>
+            <value>Полный список контрагентов</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>СписокКонтрагентовПолныйСписокРасширеннаяПодсказка</name>
+            <id>82</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>UsualButton</type>
+          <commandName>Form.Command.СписокКонтрагентовПолныйСписок</commandName>
+          <representation>Auto</representation>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <placementArea>UserCmds</placementArea>
+          <representationInContextMenu>Auto</representationInContextMenu>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Группа кнопки список контрагентов</value>
+        </title>
         <extendedTooltip>
-          <name>СписокКонтрагентовРасширеннаяПодсказка</name>
-          <id>58</id>
+          <name>ГруппаКнопкиСписокКонтрагентовРасширеннаяПодсказка</name>
+          <id>84</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -701,13 +765,15 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>UsualButton</type>
-        <commandName>Form.Command.СписокКонтрагентов</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo">
+          <group>HorizontalIfPossible</group>
+          <behavior>Auto</behavior>
+          <showLeftMargin>true</showLeftMargin>
+          <united>true</united>
+          <throughAlign>Auto</throughAlign>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
       </items>
       <items xsi:type="form:Table">
         <name>СписокКонтрагентов_ДеревоЗначений</name>
@@ -1310,6 +1376,23 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>СписокКонтрагентов</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>СписокКонтрагентовПолныйСписок</name>
+    <title>
+      <key>ru</key>
+      <value>Список контрагентов полный список</value>
+    </title>
+    <id>5</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>СписокКонтрагентовПолныйСписок</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>

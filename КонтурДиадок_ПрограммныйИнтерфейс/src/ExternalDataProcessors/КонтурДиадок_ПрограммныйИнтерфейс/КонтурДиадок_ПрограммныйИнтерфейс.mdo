@@ -20,18 +20,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="54632255-130f-4d26-bd2c-bd9cc1b4d9d3">
-    <name>ВызыватьИсключения</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вызывать исключения</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </attributes>
   <forms uuid="85f6e978-7bff-455a-86dd-5b3838f35c67">
     <name>Форма</name>
     <synonym>
