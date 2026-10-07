@@ -329,9 +329,18 @@
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
+      <handlers>
+        <event>StartChoice</event>
+        <name>ПарольСертификатаНачалоВыбора</name>
+      </handlers>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
+      <passwordMode>true</passwordMode>
+      <choiceButton>true</choiceButton>
+      <choiceButtonPicture xsi:type="core:PictureRef">
+        <picture>StdPicture.ShowPassword</picture>
+      </choiceButtonPicture>
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
@@ -460,9 +469,18 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>client_idНачалоВыбора</name>
+          </handlers>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <passwordMode>true</passwordMode>
+          <choiceButton>true</choiceButton>
+          <choiceButtonPicture xsi:type="core:PictureRef">
+            <picture>StdPicture.ShowPassword</picture>
+          </choiceButtonPicture>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -504,9 +522,18 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>client_secretНачалоВыбора</name>
+          </handlers>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <passwordMode>true</passwordMode>
+          <choiceButton>true</choiceButton>
+          <choiceButtonPicture xsi:type="core:PictureRef">
+            <picture>StdPicture.ShowPassword</picture>
+          </choiceButtonPicture>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -548,9 +575,18 @@
         <headerHorizontalAlign>Left</headerHorizontalAlign>
         <showInFooter>true</showInFooter>
         <extInfo xsi:type="form:InputFieldExtInfo">
+          <handlers>
+            <event>StartChoice</event>
+            <name>refresh_tokenНачалоВыбора</name>
+          </handlers>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
           <wrap>true</wrap>
+          <passwordMode>true</passwordMode>
+          <choiceButton>true</choiceButton>
+          <choiceButtonPicture xsi:type="core:PictureRef">
+            <picture>StdPicture.ShowPassword</picture>
+          </choiceButtonPicture>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
           <textEdit>true</textEdit>
@@ -717,11 +753,11 @@
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
         <items xsi:type="form:Button">
-          <name>СписокКонтрагентовПолныйСписок</name>
+          <name>СписокКонтрагентовПервыеДвеСтраницы</name>
           <id>81</id>
           <title>
             <key>ru</key>
-            <value>Полный список контрагентов</value>
+            <value>Первые две страницы</value>
           </title>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -729,7 +765,7 @@
             <common>true</common>
           </userVisible>
           <extendedTooltip>
-            <name>СписокКонтрагентовПолныйСписокРасширеннаяПодсказка</name>
+            <name>СписокКонтрагентовПервыеДвеСтраницыРасширеннаяПодсказка</name>
             <id>82</id>
             <type>Label</type>
             <autoMaxWidth>true</autoMaxWidth>
@@ -739,7 +775,7 @@
             </extInfo>
           </extendedTooltip>
           <type>UsualButton</type>
-          <commandName>Form.Command.СписокКонтрагентовПолныйСписок</commandName>
+          <commandName>Form.Command.СписокКонтрагентовПервыеДвеСтраницы</commandName>
           <representation>Auto</representation>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1381,10 +1417,10 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <formCommands>
-    <name>СписокКонтрагентовПолныйСписок</name>
+    <name>СписокКонтрагентовПервыеДвеСтраницы</name>
     <title>
       <key>ru</key>
-      <value>Список контрагентов полный список</value>
+      <value>Список контрагентов первые две страницы</value>
     </title>
     <id>5</id>
     <use>
@@ -1392,7 +1428,7 @@
     </use>
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
-        <name>СписокКонтрагентовПолныйСписок</name>
+        <name>СписокКонтрагентовПервыеДвеСтраницы</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
